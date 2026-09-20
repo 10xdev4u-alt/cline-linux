@@ -5,9 +5,15 @@ description: "Download Cline AI coding agent for Linux x86_64: AppImage (univers
 
 All Linux packages are built in the open by GitHub Actions from the [fork source](https://github.com/10xdev4u-alt/cline) and published on the releases page.
 
-## Latest release
+## Latest release — v0.0.32
 
-**[Download from GitHub Releases →](https://github.com/10xdev4u-alt/cline/releases)**
+**[.deb for Ubuntu/Debian/Mint (x86_64, 109 MB) →](https://github.com/10xdev4u-alt/cline/releases/download/desktop-linux-v0.0.32/Cline_0.0.32_amd64.deb)**
+
+```bash
+sudo apt install ./Cline_0.0.32_amd64.deb
+```
+
+AppImage: coming soon — tracked in [the fork issues](https://github.com/10xdev4u-alt/cline/issues). Older and future versions: [all releases →](https://github.com/10xdev4u-alt/cline/releases)
 
 | Package | Best for | Install |
 |---|---|---|
