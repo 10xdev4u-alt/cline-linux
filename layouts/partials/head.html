@@ -11,11 +11,23 @@
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — Cline for Linux{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ "og.png" | absURL }}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ "og.png" | absURL }}">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — Cline for Linux{{ end }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Cline for Linux","applicationCategory":"DeveloperApplication","operatingSystem":"Linux","offers":{"@type":"Offer","price":"0"},"downloadUrl":"{{ .Site.Params.releaseURL }}","softwareHelp":"{{ .Site.Params.repoURL }}"}
 </script>
+{{ if in .RelPermalink "/faq/" }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is Cline free on Linux?","acceptedAnswer":{"@type":"Answer","text":"The app is free and open-source (Apache 2.0). Model usage goes through providers — the Cline gateway offers 20+ free models plus a ClinePass free tier including Kimi K3."}},
+{"@type":"Question","name":"AppImage or deb?","acceptedAnswer":{"@type":"Answer","text":"AppImage runs anywhere with one file; deb integrates with Debian/Ubuntu systems. Same app inside."}},
+{"@type":"Question","name":"Do Linux builds auto-update?","acceptedAnswer":{"@type":"Answer","text":"Not yet — the updater feed currently serves macOS/Windows. Re-download new releases until feed support lands."}},
+{"@type":"Question","name":"Which models are free?","acceptedAnswer":{"@type":"Answer","text":"Any gateway id ending in :free, subject to upstream availability and rate limits."}}
+]}
+</script>
+{{ end }}
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23111'/><text x='16' y='22' font-size='17' text-anchor='middle' fill='%23fff' font-family='monospace'>C</text></svg>">

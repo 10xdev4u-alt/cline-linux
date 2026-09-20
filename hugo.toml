@@ -5,6 +5,9 @@ enableRobotsTXT = true
 enableMinify = true
 disableKinds = ["taxonomy", "term"]
 
+[outputs]
+  home = ["HTML", "RSS"]
+
 [params]
   description = "Download Cline, the autonomous AI coding agent, for Linux. Free AppImage and .deb packages, auto-built from source. Works with free DeepSeek, Kimi K3, GLM and 20+ free models."
   keywords = "cline linux, cline appimage, cline deb, ai coding agent linux, cline download, deepseek free, kimi k3 free, autonomous coding agent"
