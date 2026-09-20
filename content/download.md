@@ -26,7 +26,7 @@ Verify either file against [SHA256SUMS](https://github.com/10xdev4u-alt/cline/re
 sha256sum -c SHA256SUMS --ignore-missing
 ```
 
-Older and future versions: [all releases →](https://github.com/10xdev4u-alt/cline/releases)
+Older and future versions: [all releases →](https://github.com/10xdev4u-alt/cline/releases) · [latest release →](https://github.com/10xdev4u-alt/cline/releases/latest) · [version history →](/cline-linux/releases/)
 
 | Package | Best for | Install |
 |---|---|---|
