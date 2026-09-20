@@ -31,3 +31,4 @@
 {{ end }}
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23111'/><text x='16' y='22' font-size='17' text-anchor='middle' fill='%23fff' font-family='monospace'>C</text></svg>">
+{{ with .Site.Params.counterID }}{{ if ne . "" }}<script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{{ end }}{{ end }}

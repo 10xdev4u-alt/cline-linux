@@ -15,6 +15,11 @@ disableKinds = ["taxonomy", "term"]
   releaseURL = "https://github.com/10xdev4u-alt/cline/releases"
   repoURL = "https://github.com/10xdev4u-alt/cline"
   ogImage = "og.png"
+  # GoatCounter site code (e.g. "clinelinux"). Empty = analytics off.
+  # Owner step: create a free counter at https://www.goatcounter.com
+  # (Sites → Add, enable "Allow public dashboard" for the stats page),
+  # then set the code here.
+  counterID = ""
 
 [markup.goldmark.renderer]
   unsafe = false
