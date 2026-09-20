@@ -13,7 +13,20 @@ All Linux packages are built in the open by GitHub Actions from the [fork source
 sudo apt install ./Cline_0.0.32_amd64.deb
 ```
 
-AppImage: coming soon — tracked in [the fork issues](https://github.com/10xdev4u-alt/cline/issues). Older and future versions: [all releases →](https://github.com/10xdev4u-alt/cline/releases)
+**[AppImage, any distro (x86_64, 182 MB) →](https://github.com/10xdev4u-alt/cline/releases/download/desktop-linux-v0.0.32/Cline_0.0.32_amd64.AppImage)**
+
+```bash
+chmod +x Cline_0.0.32_amd64.AppImage
+./Cline_0.0.32_amd64.AppImage
+```
+
+Verify either file against [SHA256SUMS](https://github.com/10xdev4u-alt/cline/releases/download/desktop-linux-v0.0.32/SHA256SUMS):
+
+```bash
+sha256sum -c SHA256SUMS --ignore-missing
+```
+
+Older and future versions: [all releases →](https://github.com/10xdev4u-alt/cline/releases)
 
 | Package | Best for | Install |
 |---|---|---|
