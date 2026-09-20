@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ partial "head.html" . }}</head>
+<body>
+<header><nav><a href="{{ "/" | relURL }}"><strong>Cline for Linux</strong></a> · <a href="{{ "download/" | relURL }}">Download</a> · <a href="{{ "docs/install/" | relURL }}">Install</a> · <a href="{{ "faq/" | relURL }}">FAQ</a></nav></header>
+<main>{{ block "main" . }}{{ end }}</main>
+<footer><p>Community Linux build of <a href="https://github.com/cline/cline">Cline</a> · Maintained by <a href="https://github.com/10xdev4u-alt">10xdev4u-alt</a> · <a href="{{ .Site.Params.repoURL }}">Source</a></p></footer>
+</body>
+</html>

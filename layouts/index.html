@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>Cline AI Coding Agent for Linux</h1>
+<p class="lede">The autonomous AI coding agent — file edits, terminal commands, browser control — now packaged for Linux. Free <strong>AppImage</strong> and <strong>.deb</strong>, auto-built from source on every release.</p>
+<p><a class="btn" href="{{ "download/" | relURL }}">Download for Linux</a> <a class="btn ghost" href="{{ .Site.Params.releaseURL }}">GitHub Releases</a></p>
+<h2>Why this build exists</h2>
+<p>Official Cline desktop releases ship macOS and Windows only. This community pipeline compiles the same Tauri desktop app for <code>x86_64</code> Linux and publishes AppImage + deb artifacts — no signing theater, no waiting.</p>
+<h2>Free models included</h2>
+<p>Run 20+ free models through the Cline gateway — DeepSeek V4 Flash, GLM, Qwen, Nemotron, Gemma — plus the ClinePass free tier (Kimi K3) inside the app. See <a href="{{ "faq/" | relURL }}">FAQ</a>.</p>
+<h2>Get started</h2>
+<ol><li><a href="{{ "download/" | relURL }}">Download</a> the AppImage or deb.</li><li><a href="{{ "docs/install/" | relURL }}">Install in 2 minutes</a>.</li><li>Sign in with ClinePass and pick a <code>:free</code> model.</li></ol>
+{{ end }}

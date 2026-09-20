@@ -1,0 +1,17 @@
+baseURL = "https://10xdev4u-alt.github.io/cline-linux/"
+title = "Cline for Linux — AI Coding Agent (AppImage & deb)"
+languageCode = "en"
+enableRobotsTXT = true
+enableMinify = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Download Cline, the autonomous AI coding agent, for Linux. Free AppImage and .deb packages, auto-built from source. Works with free DeepSeek, Kimi K3, GLM and 20+ free models."
+  keywords = "cline linux, cline appimage, cline deb, ai coding agent linux, cline download, deepseek free, kimi k3 free, autonomous coding agent"
+  author = "10xdev4u-alt"
+  releaseURL = "https://github.com/10xdev4u-alt/cline/releases"
+  repoURL = "https://github.com/10xdev4u-alt/cline"
+  ogImage = "og.png"
+
+[markup.goldmark.renderer]
+  unsafe = false
